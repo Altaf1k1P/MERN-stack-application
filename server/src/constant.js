@@ -1,1 +1,1 @@
-    export const DB_NAME = "mern_db";
+ export const DB_NAME = "Pasta-House";
