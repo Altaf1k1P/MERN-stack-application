@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #ff1a1a;
+}
+
+
+
+/* filepath: d:\MERN stack application\client\src\components\TaskList.css */
+.task-list-container {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.task-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.task-details {
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+.task-name {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.read-the-docs {
-  color: #888;
+.task-phone,
+.task-notes {
+  font-size: 0.9em;
+  color: #555;
 }
